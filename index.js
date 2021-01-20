@@ -121,9 +121,18 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+function getFlavorByIndex(arr, index){
+    // Loop through the array
+    for(let i = 0;  i < arr.length; i++){
+        //Want to break the loop when I find the index that matches the string
+        if (arr[i] === index){
+            newArray.push(arr[i])
+        }
+        //Wanting to return the string at the matching index
+        return arr[index]
+    }   
 }
+getFlavorByIndex(originalFlavors, 2)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -141,8 +150,24 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName(arr, string){
+    // for (let j = 0; j < arr.length; j++){
+    //     if(arr[j] === string){
+    //         arr.splice(j)
+            
+    //     }
+    //     return newArray
+    // }
+    let i = 0;
+    while (i < arr.length) {
+        if (arr[i] === string) {
+        arr.splice(i, 1);
+        } else {
+        ++i;
+        }
+    }
+    return arr;
+
 }
 
 
