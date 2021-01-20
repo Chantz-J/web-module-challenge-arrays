@@ -70,6 +70,7 @@ function is31Flavors(arr){
        return true
    } else return false
 }
+is31Flavors(originalFlavors)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -84,8 +85,8 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-   /*your code here*/
+function addFlavor(newFlavor, arr){
+   return arr.unshift(newFlavor)
 }
 
 
@@ -163,9 +164,16 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+function filterByWord(arr, string){
+    const newArray = []
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i].includes(string)){
+            newArray.push(arr[i])
+        }
+    }
+    return newArray
 }
+console.log(filterByWord(originalFlavors, 'Chocolate'))
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
