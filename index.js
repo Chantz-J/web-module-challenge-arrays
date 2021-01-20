@@ -85,10 +85,11 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(newFlavor, arr){
-   return arr.unshift(newFlavor)
+function addFlavor(arr, string){
+    arr.unshift(string)
+    return arr
 }
-
+addFlavor(originalFlavors, 'Chocolate Mocha')
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -101,9 +102,11 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
-   /*your code here*/
+function removeLastFlavor(arr){
+   arr.pop()
+   return arr
 }
+removeLastFlavor(originalFlavors)
 
 
 
