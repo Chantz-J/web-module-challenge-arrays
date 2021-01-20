@@ -151,13 +151,6 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(arr, string){
-    // for (let j = 0; j < arr.length; j++){
-    //     if(arr[j] === string){
-    //         arr.splice(j)
-            
-    //     }
-    //     return newArray
-    // }
     let i = 0;
     while (i < arr.length) {
         if (arr[i] === string) {
